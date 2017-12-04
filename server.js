@@ -1,6 +1,8 @@
 /**
  * Created by sonja on 05.11.2017.
  */
+"use strict";
+
 var express = require('express'),
     path = require('path'),
     nodeMailer = require('nodemailer');
