@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('views'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-var port = 3000;
+var port = 8080;
 
 app.get('/', function (req, res) {
     res.render('index');
