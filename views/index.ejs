@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EasyHairBooking</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<div>
+    <div class="container"><br/>
+        <h1 style="width: 600px; color: darkred; margin: auto;"><strong><u>Online-Buchung Friseur-Termin</u></strong>
+        </h1><br/>
+        <form action="/auswahl" method="get">
+            <div id="middle">
+                <div class="row">
+                    <div class="form-group">
+                        <h4 for="name"><strong><u>Nachname:</u></strong></h4>
+                        <input type="text" class="form-control" name="name" placeholder="Nachname" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <h4 for="vorname"><strong><u>Vorname:</u></strong></h4>
+                        <input type="text" class="form-control" name="vorname" placeholder="Vorname" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+
+                        <h4 for="from"><strong><u>E-Mail-Adresse:</u></strong></h4>
+                        <input type="email" class="form-control" name="from" placeholder="E-Mail-Adresse"
+                               required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <h4 for="handynr"><strong><u>Telefonnummer / Handynummer:</u></strong></h4>
+                        <input class="form-control" pattern="[0-9]*\/*(\+49)*[ ]*(\([0-9]+\))*([ ]*(-|–)*[ ]*[0-9]+)*"
+                               name="handynr" id="handynr"
+                               placeholder="Telefonnummer / Handynummer"
+                               required>
+                        <p style="font-size: x-small">Bitte geben Sie eine deutsche Handy- oder Festnetznummer an</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <h4><strong><u>Herren</u></strong></h4>
+                        <fieldset id="herren">
+                            <input id="herren1" type="radio" name="Herren" value="Schneiden">
+                            <label for="herren1">Schneiden</label><br>
+                            <input id="herren2" type="radio" name="Herren" value="Schneiden,Waschen">
+                            <label for="herren2">Schneiden,Waschen</label><br>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <h4><strong><u>Damen</u></strong></h4>
+                        <fieldset id="damen">
+                            <input id="damen1" type="radio" name="Damen" value="Schneiden">
+                            <label for="damen1">Schneiden</label><br>
+                            <input id="damen2" type="radio" name="Damen" value="Schneiden,Waschen,Föhnen">
+                            <label for="damen2">Schneiden,Waschen,Föhnen</label><br>
+                            <input id="damen3" type="radio" name="Damen" value="Schneiden,Waschen,Färben,Föhnen">
+                            <label for="damen3">Schneiden,Waschen,Färben,Föhnen</label><br>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <h4><strong><u>Dienstleistungen</u></strong></h4>
+                        <fieldset id="dienstleistung">
+                            <input id="dienstleistung1" type="radio" name="Dienstleistung" value="Make-Up-Service">
+                            <label for="dienstleistung1">Make-Up-Service</label><br>
+                            <input id="dienstleistung2" type="radio" name="Dienstleistung" value="Tönung">
+                            <label for="dienstleistung2">Tönung</label><br>
+                            <input id="dienstleistung3" type="radio" name="Dienstleistung" value="Wimpern-Service">
+                            <label for="dienstleistung3">Wimpern-Service</label><br>
+                            <input id="dienstleistung4" type="radio" name="Dienstleistung" value="Augenbrauen-Service">
+                            <label for="dienstleistung4">Augenbrauen-Service</label><br>
+                        </fieldset>
+
+                    </div>
+                    <div class="form-group">
+                        <h4 for="sonstiges"><strong><u>Sonstige Anmerkungen</u></strong></h4>
+                        <textarea name="Sonstiges" id="sonstiges" placeholder="Sonstige Anmerkungen"></textarea>
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <h4><strong><u>Gewünschter Wochentag (optional)</u></strong></h4>
+                    <select name="wochentag">
+                        <option></option>
+                        <option>Montag</option>
+                        <option>Dienstag</option>
+                        <option>Mittwoch</option>
+                        <option>Donnerstag</option>
+                        <option>Freitag</option>
+                        <option>Samstag</option>
+                        <option>Sonntag</option>
+                    </select>
+                </div>-->
+                <div class="row">
+                    <div class="form-group">
+                        <button class="btn btn-success" id="vorschlag">Termine vorschlagen</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

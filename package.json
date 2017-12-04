@@ -1,0 +1,31 @@
+{
+  "name": "mvp-sue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "author": "Sonja Griesbacher",
+  "licenses": [
+    {
+      "type": "MIT"
+    },
+    {
+      "type": "ISC"
+    }
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "mysql": "^2.15.0",
+    "nodemailer": "^4.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
